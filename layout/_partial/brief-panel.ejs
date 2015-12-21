@@ -1,0 +1,22 @@
+<section id="brief-panel">
+  <div class="panel-box">
+    <div class="panel-avatar">
+      <a href="#"></a>
+    </div>
+    <h1 class="panel-nickname"><a href="#" class="bottom-white-dotted"><%=(theme.nickname?theme.nickname:'Your Nickname')%></a></h1>
+    <h3 class="panel-name"><a href="mailto:<%=(theme.email?theme.email:'someone@email.com')%>" class="bottom-white-dotted">@<%=(theme.name? theme.name:'Your Name')%></a></h3>
+    <p class="panel-description">
+      <%= (theme.description?theme.description:'description')%>
+    </p>
+    <nav class="panel-about">
+      【
+      <a href="#" class="panel-about-link">关于</a>
+       】
+    </nav>
+    <nav class="panel-contact">
+      <a href="<%= (theme.github? theme.github:'#')%>" class="panel-contact-link github"></a>
+      <a href="<%= (theme.twitter? theme.twitter:'#')%>" class="panel-contact-link twitter"></a>
+      <a href="/atom.xml" class="panel-contact-link rss"></a>
+    </nav>
+  </div>
+</section>

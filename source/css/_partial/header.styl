@@ -1,7 +1,9 @@
 #header
+  // margin-left: 30%
   font-size: 14px
   position: relative
   border-bottom: 1px solid color-border
+  background-color: #fff;
   &.mobile-on
     #main-nav,
     #sub-nav
@@ -10,6 +12,7 @@
 #header-outer
   height: 100%
   position: relative
+  margin-top: 15px;
 
 #header-inner
   position: relative
@@ -47,11 +50,18 @@ $nav-link
 
 #logo
   float:left
+  .logo-initial
+    background-color: #000
+    color: #fff
+    padding: 0 5px
+    margin-right: 0.5px
   @media mq-mobile
     float: none
     margin: 0 auto
     display: block
     background-position: center
+    background-size: 85%;
+    text-align: center;
 
 #sub-nav
   float: right

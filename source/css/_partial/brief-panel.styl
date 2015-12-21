@@ -1,0 +1,105 @@
+#brief-panel
+  position: fixed
+  width: 350px
+  left: 0
+  top: 0
+  bottom: 0
+  background-color: #353535
+  color: #fff
+  z-index 999
+  transition ease 0.5s
+  @media mq-panel-top
+    position: relative
+    width: 100%
+    display none
+  @media mq-large
+    width 520px
+
+.panel-box
+  position: absolute
+  bottom: 0
+  left 0
+  right 0
+  padding: 50px 10%
+  text-align: center
+  @media mq-panel-top
+    position relative
+    padding 20px
+
+
+.panel-avatar
+  width:80px
+  height:80px
+  margin: 0 auto 20px
+  border: 3px solid #fff
+  overflow: hidden
+  border-radius: 100%
+  background-image:url(images/avatar.jpg)
+  background-position: center
+  background-size: 100%
+  transition ease 0.5s
+  @media mq-large
+    width 100px
+    height 100px
+  a
+    display:block
+    width:100%
+    height:100%
+
+.panel-nickname
+  font-size: 24px
+  // font-weight bolder
+  margin 10px 0
+  @media mq-large
+    font-size 30px
+    margin 20px 0px
+
+a.bottom-white-dotted
+  text-decoration none
+  border-bottom 1px dotted #fff
+  color #fff
+
+.panel-name
+  font-size 20px
+  // font-weight bolder
+  margin 10px 0
+  @media mq-large
+    font-size 24px
+    margin 15px 0px
+
+.panel-description
+  color #777
+  text-align center
+  margin 10px 0
+  @media mq-large
+    margin 15px 0px
+
+.panel-about
+  margin 10px 0
+  @media mq-large
+    margin 15px 0px
+
+.panel-about-link
+  font-size 20px
+  color #864444
+  text-decoration none
+
+.panel-contact-link
+  text-decoration none
+  display inline-block
+  padding 0 15px
+  color #777
+  font-size 30px
+  font-family: font-icon
+  @media mq-large
+    font-size 45px
+    padding 0 25px
+
+.github::before
+  content "\f092"
+
+.twitter::before
+  content "\f081"
+
+.rss::before
+  content "\f143"

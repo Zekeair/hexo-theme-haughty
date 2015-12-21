@@ -22,6 +22,9 @@ input, button
        url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
        url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
 
+p
+  text-align: justify;
+
 html, body, #container
   height: 100%
 
@@ -48,12 +51,18 @@ body
 
 #container
   position: relative
+  padding-left: 350px
+  transition ease 0.5s
+  @media mq-panel-top
+    padding-left:0
+  @media mq-large
+    padding-left 520px
 
 .logo
-  width: 94px
+  width: 260px
   height: 57px
   background-image: url(images/logo.png)
-  background-size: 74px 28px
+  background-size: 93%
   background-position: left center
   background-repeat: no-repeat
 
@@ -68,6 +77,7 @@ body
   background-image: none
 
 @import "_extend"
+@import "_partial/brief-panel"
 @import "_partial/header"
 @import "_partial/article"
 @import "_partial/comment"
