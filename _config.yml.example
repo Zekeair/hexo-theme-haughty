@@ -1,20 +1,20 @@
 # Header
-logo_text: #Zekeair's Track
+logo_text: # Logo text
 menu:
-  Archives: archives
-  Categories: categories
-  Tags: tags
+  archives: archives
+  categories: categories
+  tags: tags
+  about: about
 
 # Left Panel
-name: #your name
-nickname: #your nickname
-email: #your email
-description: #a paragraph to descript yourself
-github: #your github page
-twitter: #your twitter page
-panel_menu: 
-  About: about
-  Books: books
+name: # Your name
+email: # Your email
+description: # Some description
+github: # Relative github site path
+twitter: # Relative twitter site path
+panel_menu:
+  about: about
+  books: tags/books-sheet
 
 # Content
 excerpt_link: Read More
@@ -22,5 +22,6 @@ toc: false #  Whether to show the table of contents in articles
 fancybox: true
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-71748521-1
+comment_provider: disqus
 favicon: /favicon.png

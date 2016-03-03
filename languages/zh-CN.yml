@@ -2,5 +2,21 @@ nav:
   next: '下一页'
   prev: '上一页'
 article:
-  comments: '评论'
+  comments: '添加评论'
   contents: '目录'
+  more: '阅读全文'
+menu:
+  archives: '时间线'
+  categories: '目录'
+  tags: '标签'
+  about: '关于'
+gallery:
+  about: '关于'
+  books: '读书'
+search: '搜索'
+about: '关于我'
+archives: '时间线'
+category: '目录'
+tag: '标签'
+description:
+  panel_description: '一个大器晚成，不断改变自我并试图改变世界的懒人'

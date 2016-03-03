@@ -91,6 +91,25 @@ a.article-title
     font-size: 1.4em
     margin: line-height 20px
     text-align: center
+    &.note
+      padding 0px 20px
+      position relative
+      border 1px solid #e3e3e3
+      border-left 5px solid #000
+      text-align left
+      margin 1.4em 0
+      font-size 100%
+      &.warn
+        border-left-color #F53800
+      &.tip
+        border-left-color #fa0
+      &.info
+        border-left-color #0af
+      .note-title
+        margin 1em 0
+        display block
+        font-size 1.3em
+        font-weight 700
     footer
       font-size: font-size
       margin: line-height 0
@@ -129,6 +148,10 @@ a.article-title
       width: 100%
       height: 100%
       margin-top: 0
+
+p.article-more-link
+  float right
+  margin 0
 
 .article-more-link a
   @extend $link

@@ -1,0 +1,23 @@
+<article id="<%= page.layout %>" class="article article-type-<%= page.layout %>" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      <%- page.content %>
+    </div>
+    <div class="about-arrow">
+    </div>
+    <nav class="about-contact">
+      <a href="mailto:<%= (theme.email? theme.email:'yours@email.com')%>" class="about-contact-link email"></a>
+      <a href="https://github.com/<%= (theme.github? theme.github:'')%>" class="about-contact-link github"></a>
+      <a href="https://twitter.com/<%= (theme.twitter? theme.twitter:'')%>" class="about-contact-link twitter"></a>
+      <a href="/atom.xml" class="about-contact-link rss"></a>
+    </nav>
+  </div>
+</article>
+
+<% if (page.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>

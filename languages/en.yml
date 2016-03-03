@@ -2,5 +2,21 @@ nav:
   next: 'Next'
   prev: 'Prev'
 article:
-  comments: 'Comments'
+  comments: 'Add Comments'
   contents: 'Contents'
+  more: 'Read More'
+menu:
+  archives: 'Timeline'
+  categories: 'Categories'
+  tags: 'Tags'
+  about: 'About'
+gallery:
+  about: 'About'
+  books: 'Books'
+search: 'Search'
+about: 'About Me'
+archives: 'Timeline'
+category: 'category'
+tag: 'tag'
+description:
+  panel_description: 'a boy becoming a man and trying to make difference'

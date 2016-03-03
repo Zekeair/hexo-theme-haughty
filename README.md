@@ -1,27 +1,28 @@
-# Minos
+# Haughty
 
-### A simple and retro styled Hexo theme, concentrated more on your ideas.
-#### >> [Preview](http://ppoffice.github.io/hexo-theme-minos/)
-![Minos - the Hexo theme](http://ppoffice.github.io/hexo-theme-minos/gallery/Minos.jpg "")
+### A simple and retro styled Hexo theme, was forked from [Minos](https://github.com/ppoffice/hexo-theme-minos).
+#### >> [Preview](http://track.zekeair.xyz/)
+
+![Haughty - the Hexo theme](http://zekeair.github.io/images/figures/haughty.jpg)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/ppoffice/hexo-theme-minos.git themes/minos
+$ git clone https://github.com/zekeair/hexo-theme-haughty.git themes/haughty
 ```
 
-**Minos requires Hexo 3.0 and above.**
+**Haughty requires Hexo 3.0 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `minos`.
+Modify `theme` setting in `_config.yml` to `haughty`.
 
 ### Update
 
 ``` bash
-cd themes/minos
+cd themes/haughty
 git pull
 ```
 
@@ -30,20 +31,31 @@ git pull
 ### Theme configuration example
 ```
 # Header
+logo_text: # Logo text
 menu:
-  Home: /
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  About: about
+  archives: archives
+  categories: categories
+  tags: tags
+  about: about
+
+# Left Panel
+name: # Your name
+email: # Your email
+description: # Some description
+github: # Relative github site path
+twitter: # Relative twitter site path
+panel_menu: 
+  about: about
+  books: tags/books-sheet
 
 # Content
 excerpt_link: Read More
-toc: false
+toc: false #  Whether to show the table of contents in articles
 fancybox: true
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-71748521-1
+comment_provider: disqus
 favicon: /favicon.png
 ```
 
@@ -83,13 +95,13 @@ Get your categories and tags listed in single pages to make your blog more metho
 
 ### Responsive Layout
 
-Minos knows on what screen size you are browsering the website, and reorganize the layout to fit your device.
+Haughty knows on what screen size you are browsering the website, and reorganize the layout to fit your device.
 
-![](http://ppoffice.github.io/hexo-theme-minos/gallery/Minos-mobile.jpg "")
+![](http://zekeair.github.io/images/figures/haughty-responsive.jpg)
 
 ### Fancybox
 
-Minos uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Haughty uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
 ```
 ![img caption](img url)

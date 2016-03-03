@@ -8,12 +8,14 @@
   color: #fff
   z-index 999
   transition ease 0.5s
-  @media mq-panel-top
+  @media mq-mobile
     position: relative
     width: 100%
     display none
   @media mq-large
     width 520px
+  @media mq-panel-top
+    left -350px
 
 .panel-box
   position: absolute
@@ -22,9 +24,6 @@
   right 0
   padding: 50px 10%
   text-align: center
-  @media mq-panel-top
-    position relative
-    padding 20px
 
 
 .panel-avatar
@@ -80,9 +79,11 @@ a.bottom-white-dotted
     margin 15px 0px
 
 .panel-about-link
-  font-size 20px
+  font-size 18px
   color #864444
   text-decoration none
+  @media mq-large
+    font-size 20px
 
 .panel-contact-link
   text-decoration none

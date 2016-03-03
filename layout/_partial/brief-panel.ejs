@@ -1,21 +1,22 @@
 <section id="brief-panel">
   <div class="panel-box">
     <div class="panel-avatar">
-      <a href="#"></a>
+      <a href="/"></a>
     </div>
-    <h1 class="panel-nickname"><a href="#" class="bottom-white-dotted"><%=(theme.nickname?theme.nickname:'Your Nickname')%></a></h1>
+    <h1 class="panel-nickname"><a href="/" class="bottom-white-dotted"><%=(config.author?config.author:'Your Nickname')%></a></h1>
     <h3 class="panel-name"><a href="mailto:<%=(theme.email?theme.email:'someone@email.com')%>" class="bottom-white-dotted">@<%=(theme.name? theme.name:'Your Name')%></a></h3>
     <p class="panel-description">
-      <%= (theme.description?theme.description:'description')%>
+      <%= __('description.panel_description')%>
     </p>
     <nav class="panel-about">
       【
-      <a href="#" class="panel-about-link">关于</a>
+      <a href="<%- url_for(theme.panel_menu.about) %>" class="panel-about-link"><%= __('gallery.about')%></a>,　
+      <a href="<%- url_for(theme.panel_menu.books) %>" class="panel-about-link"><%= __('gallery.books')%></a>
        】
     </nav>
     <nav class="panel-contact">
-      <a href="<%= (theme.github? theme.github:'#')%>" class="panel-contact-link github"></a>
-      <a href="<%= (theme.twitter? theme.twitter:'#')%>" class="panel-contact-link twitter"></a>
+      <a href="https://github.com/<%= (theme.github? theme.github:'')%>" class="panel-contact-link github"></a>
+      <a href="https://twitter.com/<%= (theme.twitter? theme.twitter:'')%>" class="panel-contact-link twitter"></a>
       <a href="/atom.xml" class="panel-contact-link rss"></a>
     </nav>
   </div>

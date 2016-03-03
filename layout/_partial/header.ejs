@@ -13,13 +13,14 @@
         %>
       </a>
       <nav id="main-nav">
-        <% for (var i in theme.menu){ %>
-          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-        <% } %>
+        <a href="<%- url_for(theme.menu.archives) %>" class="main-nav-link "><%= __('menu.archives')%></a>
+        <a href="<%- url_for(theme.menu.categories) %>" class="main-nav-link "><%= __('menu.categories')%></a>
+        <a href="<%- url_for(theme.menu.tags) %>" class="main-nav-link "><%= __('menu.tags')%></a>
+        <a href="<%- url_for(theme.menu.about) %>" class="main-nav-link main-nav-about"><%= __('menu.about')%></a>
       </nav>
       <nav id="sub-nav">
         <div id="search-form-wrap">
-          <%- search_form({button: '&#xF002;'}) %>
+          <%- search_form({button: '&#xF002;', text: __('search')}) %>
         </div>
       </nav>
     </div>

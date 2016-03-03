@@ -1,0 +1,64 @@
+.about-title
+  // margin-top 0 !important
+
+.article-type-about
+  position relative
+
+.about-avatar
+  display none
+  width:90px
+  height:90px
+  margin: 0 auto 20px
+  border: 3px dotted #fff
+  overflow: hidden
+  border-radius: 100%
+  background-image:url(images/avatar.jpg)
+  background-position: center
+  background-size: 100%
+  transition ease 0.5s
+  @media mq-panel-top
+    display block
+
+.about-title
+  text-align center
+  position relative
+
+.about-arrow
+  margin-right 50px
+  margin-bottom 50px
+  float left
+  width 186px
+  height 73px
+  background-image:url(images/about-arrow.png)
+  background-position: center
+  background-size: 100%
+  @media mq-panel-top
+    transform:scaleX(-1);
+    filter FlipV;
+    margin-left:30px
+  @media mq-mobile
+    width 93px
+    height 37px
+    margin-right 10px
+    margin-left 10px
+
+.about-contact
+  display none
+  margin-top 20px
+  @media mq-panel-top
+    display block
+
+
+.about-contact-link
+  text-decoration none
+  display inline-block
+  padding 0 15px
+  color #353535
+  font-size 45px
+  font-family: font-icon
+  @media mq-mobile
+    font-size 30px
+    padding 0 5px
+
+.email:before
+  content "\f0e0"

@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <%
   var title = page.title;
-
+  if (page.i18n){
+    title = __(title);
+  }
   if (is_archive()){
-    title = 'Archives';
+    title = __('archives');
 
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
@@ -14,9 +16,9 @@
       title += ': ' + page.year;
     }
   } else if (is_category()){
-    title = 'Category: ' + page.category;
+    title = __('category') + ': ' + page.category;
   } else if (is_tag()){
-    title = 'Tag: ' + page.tag;
+    title = __('tag') + ': ' + page.tag;
   }
   %>
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>

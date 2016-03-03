@@ -37,6 +37,15 @@ $nav-link
     float: none
     text-align: center
 
+.main-nav-about
+  position relative
+  top -500px
+  opacity 0
+  transition ease 0.5s
+  @media mq-panel-top
+    top 0
+    opacity 1
+
 #main-nav-toggle
   @extend $nav-link
   display: none
@@ -49,7 +58,7 @@ $nav-link
     display: block
 
 #logo
-  float:left
+  float: left
   .logo-initial
     background-color: #000
     color: #fff
