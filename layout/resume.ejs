@@ -1,0 +1,16 @@
+<article id="<%= page.layout %>" class="article-type-<%= page.layout %>" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    <div class="article-entry resume" itemprop="articleBody">
+      <div class="resume-download"><strong>简历下载 -&gt; <a href="/assets/resume.pdf">PDF</a> | <a href="/assets/resume.docx">Docx</a></strong></div>
+      <%- page.content %>
+    </div>
+  </div>
+</article>
+
+<% if (page.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>
